@@ -1,0 +1,10 @@
+<h4> Create new course </h4>
+  
+    <input #newCourseName type="text" placeholder="name" required>
+    <br><br>
+    <input #newCourseDuration type="number" placeholder="duration of a course" required min="1"> month
+    <br><br>
+    <input #newCoursePrice type="number" placeholder="price" min="100" required> $
+    <br><br>
+    <button (click)="addCourse(newCourseName, newCourseDuration, newCoursePrice)">Submit</button>
+    

@@ -1,0 +1,16 @@
+<h4> Create new trainer </h4>
+  
+    <input #newTrainerName type="text" placeholder="name" required>
+    <br><br>
+    <select #newTrainerCourse>
+      <option disabled>course</option>
+      <option value="front-End">Front-End</option>
+      <option value="java">Java</option>
+      <option value="python">Python</option>
+    </select>
+    <br><br>
+    <input #newTrainerTime type="text" placeholder="day & time" required>
+    <br><br>
+    <button (click)="addTrainer(newTrainerName, newTrainerCourse, newTrainerTime)">Submit</button>
+    
+  
